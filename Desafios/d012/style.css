@@ -39,10 +39,10 @@ header a:hover {
 
 /* MAIN */
 div.estrofe {
-    margin-top: 60px;
+    margin-top: 10vh;
     margin-left: 40px;
-    margin-bottom: 60px;
-    line-height: 1.7em;
+    margin-bottom: 10vh;
+    line-height: 1.9em;
     font-size: calc( 20px + (24 - 20) * (100vw - 500px) / (1000 - 500) );
 }
 
