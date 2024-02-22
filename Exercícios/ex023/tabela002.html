@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
-</head>
-<body>
-    <h1>Anatomia para Tabelas Grandes</h1>
     <style>
+        caption {
+            background-color: lightgrey;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
         }
 
         td, th {
@@ -27,12 +38,20 @@
             text-align: right;
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
     </style>
+</head>
+<body>
+    <h1>Anatomia para Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -48,11 +67,76 @@
                 <td>Rio Grande do Sul</td>
                 <td class="num">Dados</td>
             </tr>
+            <tr>
+                <td>Estado a</td>
+                <td class="num">Dados</td>
+            </tr>
+            <tr>
+                <td>Estado b</td>
+                <td class="num">Dados</td>
+            </tr>
+            <tr>
+                <td>Estado c</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado d</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado e</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado f</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado g</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado h</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado i</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado j</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado k</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado l</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado m</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado n</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado o</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado p</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado q</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado r</td>
+                <td class="num">Dados</td>
+            </tr>
+            <td>Estado s</td>
+                <td class="num">Dados</td>
+            </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num">Dados</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, porro? Neque eveniet quae error earum magnam fuga repudiandae! Commodi fuga sint aspernatur vero architecto pariatur ex dignissimos ipsa reprehenderit tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusantium officia itaque aliquid a quas nam eligendi, autem sapiente molestias ipsam alias. Suscipit omnis vero, ipsum hic sint temporibus porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus cumque aspernatur aut iusto obcaecati, nihil ea officiis animi ipsam sed impedit doloribus laborum excepturi, a temporibus tempore aperiam consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, culpa, molestias dolorum cum quidem reiciendis odio eius nisi et praesentium ad sint qui eaque voluptates accusantium corrupti pariatur adipisci quia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, porro? Neque eveniet quae error earum magnam fuga repudiandae! Commodi fuga sint aspernatur vero architecto pariatur ex dignissimos ipsa reprehenderit tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusantium officia itaque aliquid a quas nam eligendi, autem sapiente molestias ipsam alias. Suscipit omnis vero, ipsum hic sint temporibus porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus cumque aspernatur aut iusto obcaecati, nihil ea officiis animi ipsam sed impedit doloribus laborum excepturi, a temporibus tempore aperiam consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, culpa, molestias dolorum cum quidem reiciendis odio eius nisi et praesentium ad sint qui eaque voluptates accusantium corrupti pariatur adipisci quia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, porro? Neque eveniet quae error earum magnam fuga repudiandae! Commodi fuga sint aspernatur vero architecto pariatur ex dignissimos ipsa reprehenderit tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusantium officia itaque aliquid a quas nam eligendi, autem sapiente molestias ipsam alias. Suscipit omnis vero, ipsum hic sint temporibus porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus cumque aspernatur aut iusto obcaecati, nihil ea officiis animi ipsam sed impedit doloribus laborum excepturi, a temporibus tempore aperiam consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, culpa, molestias dolorum cum quidem reiciendis odio eius nisi et praesentium ad sint qui eaque voluptates accusantium corrupti pariatur adipisci quia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, porro? Neque eveniet quae error earum magnam fuga repudiandae! Commodi fuga sint aspernatur vero architecto pariatur ex dignissimos ipsa reprehenderit tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusantium officia itaque aliquid a quas nam eligendi, autem sapiente molestias ipsam alias. Suscipit omnis vero, ipsum hic sint temporibus porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus cumque aspernatur aut iusto obcaecati, nihil ea officiis animi ipsam sed impedit doloribus laborum excepturi, a temporibus tempore aperiam consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, culpa, molestias dolorum cum quidem reiciendis odio eius nisi et praesentium ad sint qui eaque voluptates accusantium corrupti pariatur adipisci quia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, porro? Neque eveniet quae error earum magnam fuga repudiandae! Commodi fuga sint aspernatur vero architecto pariatur ex dignissimos ipsa reprehenderit tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusantium officia itaque aliquid a quas nam eligendi, autem sapiente molestias ipsam alias. Suscipit omnis vero, ipsum hic sint temporibus porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus cumque aspernatur aut iusto obcaecati, nihil ea officiis animi ipsam sed impedit doloribus laborum excepturi, a temporibus tempore aperiam consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, culpa, molestias dolorum cum quidem reiciendis odio eius nisi et praesentium ad sint qui eaque voluptates accusantium corrupti pariatur adipisci quia!</p>
 </body>
 </html>
