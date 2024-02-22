@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Filmes</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .materia {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2" rowspan="2">Área</th>
+            <th colspan="2" rowspan="2">Disciplina</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th colspan=".5">Nota 1</th>
+            <th colspan="1">Nota 2</th>
+        </tr>
+        <tr>
+            <td class="materia" colspan="2" rowspan="4">Exatas</td>
+            <td colspan="2">Matemática</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Física</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Química</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Biologia</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+        </tr>
+        <tr>
+            <th colspan="6">Média de Exatas</th>
+            <td class="num" style="background-color: gray; color: white;">00</td>
+        </tr>
+        <tr>
+            <td class="materia" colspan="2" rowspan="2">Humanas</td>
+            <td colspan="2">Hitória</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Geografia</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+            <td class="num">00</td>
+        </tr>
+        <tr>
+            <th colspan="6">Média de Humanas</th>
+            <td class="num" style="background-color: gray; color: white;">00</td>
+        </tr>
+    </table>
+</body>
+</html>
